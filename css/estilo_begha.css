@@ -1,0 +1,519 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Bario-R';
+}
+.container{
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 1280px;
+}
+.titulo-box{
+    text-align: center;
+}
+.titulo-box h2{
+    font-size: 40px;
+    letter-spacing: 8px;/* Espacamento entre letras */
+    /*word-spacing: 12px;*/ /*Espacamento entre palavras */
+    color: white;
+}
+.titulo-box p{
+    font-size: 22px;
+    color: red;
+    margin: 10px 0px 40px 0;
+}
+.clear{clear: both;}
+html,body{
+    height: 100%;
+}
+@font-face{
+    font-family: 'Bario-R';
+    src:url("../fonts/Bariol_Regular.otf");
+}
+@font-face{
+    font-family: 'Bario-I';
+    src:url('../fonts/Bariol_Regular_Italic.otf');
+}
+/* *********** Classes Auxiliares ******** */
+/* ************  HEADER . header ********* */
+header.header{
+    width: 100%;
+    padding: 12px 30px;
+    background-color: #eb4f4e;
+    border-bottom: 1px solid white;
+}
+.header .logo-icon{
+    position: relative;
+    top: 4px;
+    float: left;
+}
+.logo-icon img{
+    height: 50px;
+    width: 150px;
+}
+.header nav.menu-mobile{
+    display: none;
+}
+.header nav.menu-desktop{
+    position: relative;
+    top: 12px;
+    float: right;
+}
+nav.menu-desktop ul{
+    list-style: none;
+}
+nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 8px;
+}
+ nav.menu-desktop ul li:hover{
+        background-color: rgb(44, 62, 80);
+    }
+nav.menu-desktop ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+/* ********* SECTION .banner **************** */
+section.banner{
+    height: 620px;
+    padding: 30px 2% 5px 2%;
+    text-align: center;
+    background-color: #eb4f4e;
+}
+section.banner .banner-img{
+    position: relative;
+    top: 80px;    
+    width: 100%;
+    height: 488px;
+    background-image: url("../img/banner-img.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* ************** SECTION .criatividade ****** */
+section.criatividade{
+    padding: 30px 2%;
+    background: #232324;
+    text-align: center;
+}
+.criatividade > .container{
+    max-width: 1200px;
+}
+.smart-single{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: calc(100% / 3);
+    padding: 0 2%;
+}
+.smart-single h2{
+    padding: 10px 0;
+   color: white;
+}
+.smart-single p{
+    color: #eb4f4e;
+    line-height: 22px;
+}
+/* ************* SECTION .team-talentes ****** */
+section.team-telents{
+    padding: 30px 2%;
+    background-color: #6cc372;
+}
+.team-telents > .container{
+    max-width: 1280px;
+    text-align: center;
+}
+.team-telents .titulo-box p{
+    color: black;
+}
+.team-box-single{
+   display: inline-block;
+   float: left;
+   text-align: center;
+   width: calc(100% / 4);
+  
+   min-height: 342px;
+   padding: 25px 2% 18px 2%;
+   border: 5px solid #6cc372;
+   background-color: white;
+}
+.team-box-single .avatar-circle{
+    width: 147px;
+    height: 147px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #6cc372;
+    border: 5px solid #6cc372;
+}
+.avatar-circle img{
+    width: 100%;
+    height: 100%;
+}
+.team-descricao h2{
+    margin-top: 16px;
+    font-size: 22px;
+    color: #6cc372;
+}
+.team-descricao p{
+    font-size: 22px;
+    margin-top: 16px;
+    word-spacing: 8px;
+    color: #e74c3c;
+}
+.team-descricao input[type="submit"]{
+    margin-top: 32px;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 25px;
+    letter-spacing: 3px;
+    background-color: #6cc372;
+    border: 0;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    
+}
+/* ************ SECTION .loja-chamada ******* */
+section.loja-chamada{
+    padding: 30px 2% 120px 2%;
+    background-color: #f0f0f0;
+}
+.loja-chamada > .container{
+    max-width: 1280px;
+    text-align: center;
+}
+.loja-chamada .titulo-box h2{
+    color: black;
+}
+.loja-chamada .titulo-box p{
+    color: #6cc372;
+}
+.loja-chamada .genuine-container-single{
+    display: inline-block;
+    margin: 20px 10px;
+}
+/* ************** SECTION .preco-servicos **** */
+section.preco-servicos{
+    background-color: white;
+    padding: 0 2% 30px 2%;
+    min-height: 280px;
+    border-top:  1px solid rgb(189, 195, 199);
+}
+.preco-servicos > .container{
+    max-width: 100%;
+    text-align: center;
+}
+.preco-single{
+    position: relative;
+    top: -100px;
+    display: inline-block;
+    margin: 0 5px;
+    background-color: #f0f0f0;
+}
+.preco-single .preco-titulo{
+    background-color: white;
+    padding: 12px 60px;
+}
+/*div.preco-single:nth-of-type(2) .preco-titulo{
+    background-image: url('../img/icon-grenage.png');
+    background-size: 10% 10%;
+    background-repeat: no-repeat;
+    background-position: center 105%;
+}*/
+.preco-titulo h2{
+    font-size: 39px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+.preco-titulo p{
+    font-size: 18px;
+    color: #e74c3c;
+    letter-spacing: 2px;
+}
+div.preco-single:nth-of-type(2) .preco-titulo p{
+    color: black;
+}
+.preco-single .servico-lista-option ul{
+    list-style-position: inside;
+}
+.servico-lista-option ul li{
+    padding: 12px 0;
+    list-style: none;
+    border-top: 1px solid rgb(189, 195, 199);
+    color: graytext;
+}
+.preco-single .mensal-servico{
+    padding: 20px 20px;
+    background-color: #616161;
+    text-align: right;
+    border-radius: 0px 0px 8px 8px;
+}
+div.preco-single:nth-of-type(2) .mensal-servico{
+    background-color: #e74c3c;
+}
+.mensalidade {
+    width: 96%;
+}
+ .mensalidade h3{
+    color: white;
+    display: inline-block;
+    float: left;
+}
+.mensalidade h3 sup{
+    position: relative;
+    top: 4px;
+    left: -4px;
+}
+.mensalidade h3 sub{
+    position: relative;
+    top: -3px;
+    left: 4px;
+}
+.preco-servicos input[type="submit"]{
+   position: relative;
+   padding: 5px 10px;
+   top: 4px;
+   border: none;
+   border-radius: 8px;
+   outline: none;
+   cursor: pointer;
+}
+/* ************* SECTION .contatos *********** */
+section.contatos{
+   padding: 30px 2%;
+   background-color: #eb4f4e;
+}
+.contatos .container{
+    max-width: 1280px;
+    text-align: center;
+}
+.contatos .titulo-box p{
+    color: black;
+}
+.contatos .form{
+    display: inline-block;
+    text-align: center;
+    padding: 0 2% 0 0;
+    width: 50%;
+    float: left;
+}
+.container-input{
+    text-align: left;
+    width: 100%;
+    padding: 10px 0;
+}
+.container-input label{
+    display: block;
+    padding-bottom: 6px;
+    color: white;
+}
+.container-input input[type="text"],
+.container-input input[type="email"]{
+    width: 96%;
+    padding: 16px 10px;
+    outline: none;
+    border: 1px solid #bdc3c7;
+    font-size: 18px;
+}
+.container-input textArea{
+    width: 96%;
+    height: 180px;
+    padding: 16px 10px;
+    outline: none;
+    border: 1px solid #bdc3c7;
+    resize: none;
+}
+.form input[type="submit"]{
+    display: inline-block;
+    position: relative;
+    left: -2%;
+    width: 96%;
+    padding: 16px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+.contatos .map{
+    width: 50%;
+    float: right;
+    display: inline-block;
+    background: white;
+    color: white;
+    text-align: center;
+}
+.map .container-map{
+    width: 100%;
+    max-width: 480px;
+    height: 460px;
+    margin-top: 20px;
+    background: white;
+}
+.mapouter{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/* ***** SECTION .Social ************ */
+section.social{
+    padding: 30px 2%;
+    text-align: center;
+    background-color: #232324;
+}
+.social  .titulo-box h2{
+    color: white;
+}
+.social .titulo-box p{
+    color: #eb4f4e;
+     margin: 10px 0px 20px 0;
+}
+.social nav ul{
+    list-style: none;
+}
+.social nav ul li{
+   position: relative;
+   display: inline-block;
+   padding: 0px 20px;
+   height: 80px;
+   width: 80px;
+   margin: 0px 10px;
+   border: 2px solid white;
+   border-radius: 50%;
+}
+.social nav ul li a i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+/* ************ FOOTER .footer **********/
+footer.footer{
+    width: 100%;
+    padding: 30px 2%;
+    background-color: #eb4f4e;
+    border-top: 1px solid white;
+}
+.footer p{
+   color: white;
+   font-size: 22px;
+   padding-bottom:8px;
+   text-align: center;
+}
+@media screen and (max-width: 1024px){
+    form{
+        display: inline-block;
+        width: 100%;
+    }
+    .container-map{
+        display: inline-block;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 900px){
+    /* ***** SECTION .preco-servicos **** */
+    .preco-servicos .preco-single{
+       position: relative;
+       top: -120px;
+       display: inline-block;
+       max-width: 320px;
+    }
+   .preco-servicos div.preco-single{
+        margin-top: 20px;
+        box-shadow: 2px 2px 2px 2px rgba(149, 165, 166,1.0);
+    }
+    div.preco-single:nth-of-type(3){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /* ***** Classe Auxiliar ****** */
+    .titulo-box p{
+         margin: 10px 0px 20px 0;
+    }
+    /*** SECTION .header ******** */
+    .header nav.menu-desktop{
+        display: none;
+    }
+    .header nav.menu-mobile{
+        display: block;
+        float: right;
+    }
+    .header nav.menu-mobile h2{
+        position: relative;
+        top: 14px;
+        width: 26px;
+        height: 26px;
+        background-image: url('../img/line-menu.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .header nav.menu-mobile ul{
+        z-index: 999;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        list-style-position: inside;
+        background-color: #e74c3c;
+    }
+    .header nav.menu-mobile ul li{
+        display: none;
+        padding: 10px;
+        list-style: none;
+        text-align: center;
+        cursor:pointer;
+        border-top: 1px solid white;
+    }
+    nav.menu-mobile ul li:hover{
+        background-color: rgba(44, 62, 80, 0.7);
+    }
+    nav.menu-mobile ul li:last-child{
+        border-bottom: 1px solid white;
+    }
+    nav.menu-mobile ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+    /* ******** SECTION .criatividade ******** */
+    .criatividade .smart-single{
+        width: 100%;
+        margin-top: 20px;
+    }
+    /* ******** SETION .team-telents ******* */
+    .team-telents{
+        text-align: center;
+    }
+    .team-box-single{
+        width: calc(100% / 2);
+        margin-top: 20px;
+    }
+    /* ***** SECTION .preco-servicos ***** */
+    div.preco-single:nth-of-type(3){
+        display: inline-block;
+    }
+    section.contatos{
+        padding: 30px 5%;
+    }
+    section.contatos .form{
+        width: 100%;
+        float: none;
+        display: inline-block;
+    }
+    section.contatos .map{
+        width: 100%;
+        float: none;
+        margin-top: 30px;
+        display: inline-block;
+    }
+    
+}
